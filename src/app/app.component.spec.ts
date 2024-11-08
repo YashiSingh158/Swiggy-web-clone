@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'swiggy-web-clone' title`, () => {
+  it(`should have the 'swiggyclone' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('swiggy-web-clone');
+    expect(app.title).toEqual('swiggyclone');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, swiggy-web-clone');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, swiggyclone');
   });
 });
